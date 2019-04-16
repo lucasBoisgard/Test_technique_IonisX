@@ -7,17 +7,10 @@
 
 import React, { Component } from 'react'
 
-export default class App extends Component {  
-    constructor(props) {
-      super(props);
-      this.state = {
-        name: this.props.name || 'Anonymous'
-      }
-    }    
-
-    render() {
+export default class App extends Component {   
+   render() {
       return (
-        <p>Hello {this.state.name}</p>
+        <p>Hello {this.props.name || 'Anonymous'}</p>
       );  
     }
   }
